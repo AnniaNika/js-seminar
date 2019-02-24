@@ -1,0 +1,338 @@
+body {
+	color: black;
+	padding: 40px 0;
+	font: 20px/24px 'Alegreya Sans', sans-serif;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.page-main {
+	margin: 40px 0 60px;
+}
+
+.page-main .img {
+	border-radius: 10px;
+}
+
+
+/* CONTACT INFO
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.contact-info {
+	position: fixed;
+	top: 10%;
+	right: 0;
+	background: white;
+	padding: 5px 10px;
+	text-align: center;
+}
+
+.contact-info a {
+	font-size: 22px;
+}
+
+.contact-info i {
+	color: #3b5998;
+}
+
+
+/* PAGE HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header {
+	text-align: center;
+}
+
+.page-header ul {
+	padding: 15px 0;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	margin-top: 40px;
+}
+
+.page-header ul li {
+	display: inline-block;
+}
+
+.page-header ul li:not(:last-child) {
+	margin-right: 30px;
+}
+
+.page-header ul li a {
+	padding: 5px 7px;
+	border-radius: 3px;
+	transition: all .3s;
+}
+
+.page-header ul li.active a,
+.page-header ul li a:hover {
+	color: white;
+	background: black;
+}
+
+
+/* PAGE FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer ul {
+	text-align: center;
+}
+
+.page-footer ul li {
+	display: inline-block;
+}
+
+.page-footer ul li:not(:last-child) {
+	margin-right: 50px;
+}
+
+.page-footer i {
+	font-size: 30px;
+	transition: all .5s;
+}
+
+.page-footer i:hover {
+	transform: scale(1.5) rotate(360deg);
+}
+
+.page-footer ul li:nth-child(1) a {
+	color: #3b5998;
+}
+
+.page-footer ul li:nth-child(2) a {
+	color: #1da1f2;
+}
+
+.page-footer ul li:nth-child(3) a {
+	color: #f46f30;
+}
+
+
+/* PAGE INDEX
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-main .text-intro {
+	text-align: center;
+	/*margin-top: 50px;*/
+}
+
+.page-main .text-intro h1 {
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.page-main .text-intro p {
+	margin: 40px 0;
+}
+
+.page-main .text-intro img {
+	box-shadow: 0 7px 16px -5px rgba(0,0,0,.9);
+}
+
+
+/* PAGE ABOUT
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.about .banner {
+	position: relative;
+	height: 70vh;
+	background-color: rgba(0,0,0,.4);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../img/about.jpg);
+	background-position: bottom right;
+	background-blend-mode: multiply;
+}
+
+.about .banner-text {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	max-width: 50%;
+	padding: 25px;
+	color: white;
+}
+
+.about .section {
+	margin: 40px 0;
+}
+
+.about .our-story figure {
+	margin: 20px 0 30px;
+}
+
+.about .our-story img {
+	box-shadow: 0 7px 16px -5px rgba(0,0,0,.9);
+}
+
+.about .our-story figcaption {
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+.about table {
+	width: 100%;
+	text-align: center;
+	box-shadow: 0 7px 16px -5px rgba(0,0,0,.9);
+}
+
+.about table thead tr,
+.about table tbody tr:nth-child(even) {
+	color: white;
+	background-color: #f46f30;
+}
+
+.about table th,
+.about table td {
+	padding: 5px 0;
+}
+
+.about .our-values ul {
+	list-style: circle;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+.about .our-values ul li + li {
+	margin-top: 5px;
+}
+
+.about .our-offices .video {
+	margin-top: 20px;
+}
+
+.about .quotes {
+	padding-top: 0;
+}
+
+.about .quotes blockquote {
+	font-style: italic;
+	font-weight: 300;
+	margin-top: 30px;
+}
+
+.about .quotes blockquote p {
+	padding-top: 10px;
+}
+
+.about .quotes .blockquote-footer {
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+.about .quotes blockquote::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 30px;
+  content: "\f10d";
+}
+
+.about .quotes cite {
+	font-style: normal;
+}
+
+/* PAGE WORK
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.work .projects {
+	margin-top: 20px;
+}
+
+.work .projects li {
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: top;
+	position: relative;
+	width: calc(100% / 3);
+	overflow: hidden;
+}
+
+.work .projects img {
+	display: block;
+	transition: all .3s;
+}
+
+.work .projects figcaption {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0%;
+	bottom: -100%;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.65);
+	transition: bottom .3s;
+	color: white;
+	font-weight: bold;
+}
+
+.work .projects figure:hover figcaption {
+	bottom: 0;
+}
+
+.work .projects figure:hover img {
+	transform: scale(1.25);
+}
+
+/*MQ*/
+@media screen and (max-width: 550px) {
+	body {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.page-main .text-intro h1 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.page-main .banner {
+		max-height: 280px;
+	}
+
+	.page-main .banner-text {
+		max-width: none;
+	}
+}
+
+/*JS STYLES*/
+.instructions {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 5px;
+	background: #00ff00;
+	font-weight: bold;
+}
+
+body {
+	transition: background .3s;
+}
+
+.filter {
+	transition: filter .3s;
+	filter: blur(5px) brightness(0.7);
+}
+
+.scroll-down-1 {
+	background: black;
+	color: white;
+}
+
+.scroll-down-2 {
+	background: #FF0000;
+	color: white;
+}
+
+.scroll-down-1 .filter {
+	filter: blur(5px) brightness(0.7);
+
+}
+
+.scroll-down-2 .filter {
+	filter: brightness(1) grayscale(100%);
+}
